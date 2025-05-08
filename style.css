@@ -281,7 +281,7 @@ nav ul li a:focus::after {
 
 .video-container {
     position: absolute;
-    top: 150px;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -376,6 +376,12 @@ nav ul li a:focus::after {
     transition: opacity 0.5s ease;
   }
   
+
+  section:not(.hero) {
+    position: relative;
+    z-index: 1;
+}
+
 
 .scroll-down {
     position: absolute;
