@@ -469,7 +469,7 @@ nav ul li a:focus::after {
     display: block;
     font-size: 36px;
     font-weight: 700;
-    color: var(--tennis-green);
+    color: var (--tennis-green);
     margin-bottom: 5px;
 }
 
@@ -773,7 +773,7 @@ nav ul li a:focus::after {
     width: 40px;
     height: 40px;
     background-color: var(--tennis-green);
-    color: var(--pure-white);
+    color: var (--pure-white);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -993,8 +993,8 @@ footer {
     }
     
     .gallery-item {
-        flex: 0 0 250px;
-        height: 180px;
+        flex: 0 0 100%; /* Make gallery items take full width */
+        height: auto; /* Adjust height automatically */
     }
     
     .stats {
@@ -1009,6 +1009,61 @@ footer {
     
     .contact-form {
         padding: 30px 20px;
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Add spacing between items */
+    }
+
+    .about-image {
+        width: 100%; /* Ensure the image takes full width */
+    }
+
+    .about-text {
+        text-align: center; /* Center-align the text */
+    }
+
+    .ranking-badges {
+        flex-direction: column; /* Stack badges vertically */
+        gap: 20px; /* Add spacing between badges */
+    }
+
+    .badge {
+        width: 100%; /* Ensure badges take full width */
+        text-align: center; /* Center-align the content */
+    }
+
+    .badge-circle {
+        margin: 0 auto; /* Center the badge circle */
+    }
+
+    .timeline::before {
+        left: 20px; /* Adjust the vertical line position */
+    }
+
+    .timeline-content {
+        width: calc(100% - 40px); /* Reduce width for smaller screens */
+        margin-left: 40px !important; /* Adjust left margin */
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content::before,
+    .timeline-item:nth-child(even) .timeline-content::before {
+        left: -30px; /* Adjust the position of the dots */
+        right: auto;
+    }
+
+    .contact-content {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Add spacing between items */
+    }
+
+    .contact-form {
+        width: 100%; /* Ensure the form takes full width */
+    }
+
+    .contact-info {
+        text-align: center; /* Center-align the contact info */
     }
 }
 
