@@ -528,6 +528,15 @@ nav ul li a:focus::after {
     color: var(--pure-white);
     box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
     transition: all var(--transition-speed) ease;
+    
+        background-image: url('assets/tennis.png'); /* Replace with your image path */
+        background-size: cover; /* Ensure the image covers the entire background */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        border-radius: 70px; /* Optional: Add rounded corners */
+        padding: 20px; /* Optional: Add padding for inner content */
+        color: black; /* Optional: Ensure text is readable on the background */
+    
 }
 
 .badge:hover .badge-circle {
